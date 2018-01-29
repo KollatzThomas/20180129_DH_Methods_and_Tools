@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Information about the source</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p><persName ref="Max Havelaar">Ik</persName> ben makelaar in <w lemma="koffie">koffi</w>, en woon op de Lauriergracht No 37. Het
+            is mijn gewoonte niet, romans te schrijven, of zulke dingen, en het heeft dan
+            ook lang geduurd, voor ik er toe overging een paar riem papier extra te
+            bestellen, en het werk aan te vangen, dat gij, lieve lezer, <choice><corr>zoeven</corr><orig>zoâven</orig></choice> in de hand
+            hebt genomen, en dat ge lezen moet als ge makelaar in koffie zijt, of als ge wat
+            anders zijt. Niet alleen dat ik nooit iets schreef wat naar een roman geleek,
+            maar ik houd er zelfs niet van, iets dergelijks te lezen, omdat ik een man van
+            zaken ben. Sedert jaren vraag ik mij af, waartoe zulke dingen dienen, en ik sta
+            verbaasd over de onbeschaamdheid, waarmee een dichter of romanverteller u iets
+            op de mouw durft spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.</p>
+      </body>
+  </text>
+</TEI>

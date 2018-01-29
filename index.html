@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Digital Humanities</title>
+
+        <!-- meta information -->
+        <meta name="author" content="Thomas Kollatz" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=1024" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <!-- favicons -->
+        <link rel="shortcut icon" href="resources/img/favicon.png" />
+        <link rel="apple-touch-icon" href="resources/img/apple-touch-icon.png" />
+
+        <!-- CSS reset and grid -->
+        <link href="vendor/normalize/normalize-4.1.1.css" rel="stylesheet" />
+        <link href="vendor/skeleton/skeleton-2.0.4.css" rel="stylesheet" />
+
+        <!-- fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,600italic,400italic,700italic,800,800italic&amp;subset=latin,latin-ext"
+            rel="stylesheet" type="text/css" />
+
+        <!-- styles for included libraries -->
+
+        <!-- chartist -->
+        <link rel="stylesheet" href="vendor/chartist/chartist.min-0.9.7.css" />
+
+        <!-- unite gallery -->
+        <link rel="stylesheet" href="vendor/unitegallery/css/unite-gallery.css" type="text/css" />
+
+
+        <!-- codemirror -->
+        <link rel="stylesheet" href="vendor/codemirror/lib/codemirror.css" />
+
+        <!-- highlight -->
+        <link rel="stylesheet" href="vendor/highlight/styles/default.css" />
+        <link rel="stylesheet" href="resources/css/hljs.linenumbering.css" />
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="vendor/swiper/swiper.min.css" />
+
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup-1.1.0.css" />
+
+        <!-- standard presentation styles -->
+        <link href="resources/css/style.css" rel="stylesheet" />
+
+        <!-- custom presentation styles -->
+        <link href="resources/css/custom.css" rel="stylesheet" />
+
+        <!-- js needed in head -->
+
+        <!-- greuler -->
+        <script src="vendor/d3/d3-3.5.6.js"></script>
+        <script src="vendor/cola/cola.v3.min.js"></script>
+        <script src="vendor/greuler/greuler-0.5.5.min.js"></script>
+
+        <!-- html5 dataset shim for IE -->
+        <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+
+    </head>
+
+    <body>
+        <div class="fallback-message">
+            <p> Your browser <strong>doesn't support the features required</strong> by
+                impress.mod.js, so you are presented with a simplified version of this presentation. </p>
+            <p> For the best experience please use the latest <strong>Chrome</strong>,
+                    <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
+        </div>
+        <div id="impress">
+            <div class="step">
+                <h4><strong>2018-01-29</strong> | <a href="#">Amsterdam</a></h4>
+                <h4><strong>college: Oude Boeken in een nieuwe wereld</strong></h4>
+                <h1 class="down-100">Digital Humanities</h1>
+                <h2 class="red up-25">methods and tools</h2>
+                <h4 class="down-100">
+                    <strong>Slides:</strong>
+                    <a href="https://kollatzthomas.github.io/20180129_DH_Methods_and_Tools/"
+                        title="View the presentation online">
+                        https://kollatzthomas.github.io/20180129_DH_Methods_and_Tools/ </a>
+                </h4>
+                <h5>
+                    <strong><a href="http://orcid.org/0000-0003-1904-1841">Thomas
+                        Kollatz</a></strong> | <img src="resources/img/Twitter_bird_logo_2012.svg"
+                        alt="Twitter" class="twitter-icon" />
+                    <a href="https://twitter.com/kol_t" title="Thomas Kollatz on Twitter">@kol_t</a>
+                    | <img src="resources/img/Octicons-mark-github.svg" alt="Twitter"
+                        class="gh-icon" />
+                    <!--   <a href="https://github.com/digicademy/" title="Digital Academy on GitHub">digicademy</a> |-->
+                    <a href="https://github.com/KollatzThomas/" title="Thomas Kollatz on GitHub"
+                        >KollatzThomas</a> | <a href="https://creativecommons.org/licenses/by/4.0/"
+                        >CC-BY 4.0</a>
+                </h5>
+            </div>
+            <div class="step">
+                <h2>Table of Contents</h2>
+                <ol class="line-height-one-five">
+                    <li> Definition(s)</li>
+                    <li> Projects</li>
+                    <li> Linked Open Data</li>
+                    <li> Text encoded</li>
+                    <!-- <li> Digital Texts – Digital Editions </li> -->
+
+                    <!-- <li> florilegium – flowers and things</li> -->
+                    <li> To read or not to read – Is that the question </li>
+                    <li> Digital Humanities and Book History </li>
+                </ol>
+            </div>
+            <div class="step">
+                <h1 class="red">01</h1>
+                <h2 class="line-height-one-five"> Definitions</h2>
+            </div>
+            <div class="step" id="definitions">
+                <p>
+                    <object data="https://whatisdigitalhumanities.com" width="900" height="600"
+                        class="justified"></object>
+                </p>
+                <p class="small centered">For more definitions – <a title="refresh" onclick=""
+                        >Refresh</a> this slide</p><p class="small right">
+                    <a href="https://whatisdigitalhumanities.com" class="right"
+                        >https://whatisdigitalhumanities.com</a></p>
+            </div>
+            <div class="step">
+                <h1 class="red">02</h1>
+                <h2 class="line-height-one-five"> Projects </h2>
+            </div>
+            <div class="step">
+                <h2 class="red">Digital Knowledge Space</h2>
+                <h3>Virtual Research Libraries</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qedGW_c-nBQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                <!-- <object data="https://www.youtube.com/embed/qedGW_c-nBQ" width="560" height="315"></object></p> -->
+                <!-- <object data="data/Digital%20Knowledge%20Spaces%20Virtual%20Research%20Laboratories%20in%20the%20humanities-1.mp4" type="video/mpeg"></object> -->
+                <!--  <iframe src="data/Digital%20Knowledge%20Spaces%20Virtual%20Research%20Laboratories%20in%20the%20humanities.mp4" frameborder="0" allowfullscreen="allowfullscreen" width="560" height="315"></iframe>
+                    -->
+                <!--     <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/qedGW_c-nBQ?rel=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe> -->
+                <!--   <div class="center step-enter">
+                        <video src="https://www.youtube.com/embed/qedGW_c-nBQ?rel=0" controls="controls" autoplay="autoplay" width="560" height="315"></video>
+                    </div> -->
+                <!-- frameborder="0" allowfullscreen="allowfullscreen" -->
+                <p class="small">source: <a href="https://www.youtube.com/watch?v=qedGW_c-nBQ"
+                        >https://www.youtube.com/watch?v=qedGW_c-nBQ</a></p>
+            </div>
+            <!--   <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                <object data="https://www.youtube.com/embed/qedGW_c-nBQ" width="560" height="315" contextmenu="controls"></object>
+            </div><div class="six columns">
+                <ul><li class="substep">a</li>
+                <li class="substep">b</li></ul>
+            </div>
+            </div>
+            </div> -->
+            <div class="step">
+                <h2>projects</h2>
+                <h3 class="red">Anthropology of the Americans</h3>
+                <h4><a href="http://mayawoerterbuch.de/category/databases/">Text Database and
+                        Dictionary of the Classical Mayan Language</a></h4>
+                <blockquote class="medium"> The goals of the project are to provide a digital corpus
+                    of the texts and to compile a corpus-based dictionary of Classic Mayan, which
+                    will be published in both digital and printed format. This dictionary will
+                    provide a comprehensive vocabulary of Classic Mayan and its use in writing. In
+                    cooperation with linguists, computer scientists and by using the virtual
+                    research platform TextGrid, the project team in both Bonn and Göttingen will
+                    prepare, analyse and interpret the hieroglyphic texts using information
+                    technology tools.</blockquote>
+                <p class="x-small right"><a href="http://mayawoerterbuch.de/objectives/"
+                        >http://mayawoerterbuch.de/objectives/</a></p>
+                <div>
+                    <figure class="mfp-lightbox"><a href="resources/img/note007_001.png"><img
+                                src="resources/img/note007_001.png" /></a></figure>
+                    <p class="x-small">Drawing of the hieroglyphic inscription on CPN3033 (drawing
+                        by Christian Prager and Elisabeth Wagner), see: <a
+                            href="http://dx.doi.org/10.20376/IDIOM-23665556.17.rn007.en">Historical
+                            Implications of the Early Classic Hieroglyphic Text CPN 3033 on the
+                            Sculptured Step of Structure 10L 11-Sub-12 at Copan</a></p>
+                </div>
+                <!-- <ul>
+                    <li><a href="https://textgrid.de/en/">TextGrid</a> – Virtual Research
+                        Environment</li>
+                </ul> -->
+            </div>
+            <div class="step">
+                <h2>projects</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <h3 class="red">Musicology</h3>
+                        <h4><a href="https://de.dariah.eu/mei-score-editor">MEISE</a></h4>
+                        <blockquote>Native editor for the encoding format of the Music Encoding
+                            Initiative</blockquote>
+                        <h4 class="down-50"><a href="http://weber-gesamtausgabe.de/en">Carl Maria
+                                von Weber Gesamtausgabe</a></h4>
+                        <blockquote>Digital Edition of letters from | to the composer Carl Maria von
+                            Weber</blockquote>
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a
+                                href="resources/img/screencapture-weber-gesamtausgabe-de-en-A002068-Correspondence-A040074-html-1517165498258.png"
+                                    ><img
+                                    src="resources/img/screencapture-weber-gesamtausgabe-de-en-A002068-Correspondence-A040074-html-1517165498258.png"
+                                    style="width:30rem" /></a>
+                        </figure>
+                        <p class="x-small"><a
+                                href="http://weber-gesamtausgabe.de/en/A002068/Correspondence/A040074.html"
+                                >http://weber-gesamtausgabe.de/en/A002068/Correspondence/A040074.html</a></p>
+                    </div>
+                </div>
+                <!--   <ul class="down-50">
+                    <li>Example<ul>
+                            <li>
+                        <a
+                            href="http://weber-gesamtausgabe.de/en/A002068/Correspondence/A040074.html"
+                            >letter</a><ul>
+                            <li>Edition</li>
+                            <li>Indizes</li>
+                            <li>Relations </li></ul>
+                        </li></ul></li></ul> -->
+            </div>
+            <div class="step">
+                <h2>projects</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <h3 class="red">German Philology</h3>
+                        <h4><a href="https://fontane-nb.dariah.eu">Digital Critical Edition of
+                                Theodor Fontane's Notebooks</a></h4>
+                        <h4>based on a Virtual Research Environment</h4>
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/fontane.png"><img src="resources/img/fontane.png"
+                                 /></a>
+                        </figure>
+                        <p class="x-small"><a
+                                href="https://fontane-nb.dariah.eu/edition.html?id=/xml/data/1zzdp.xml&amp;page=1r"
+                                >https://fontane-nb.dariah.eu/edition.html?id=/xml/data/1zzdp.xml&amp;page=1r</a></p>
+                    </div>
+                </div>
+            </div>
+            <!-- 
+            <div class="step">
+                <div class="row">
+                    <div class="six columns">
+                        <h2>projects</h2><h3 class="red">Jewish Studies</h3><h4><a
+                                href="http://steinheim-institut.de/cgi-bin/epidat?lang=en"
+                                >epidat</a> – Research Plattform for Jewish Epigraphy</h4>
+                        <div class="down-50">
+                            <h4>List of tools and services used by epidat</h4>
+                            <ul class="line-height-one-five medium">
+
+                                <li><a
+                                        href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-2338#f"
+                                        >Repository for Digital Texts and Images</a></li>
+                                <li><a
+                                        href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361"
+                                        >Annotation-Service</a> for managing Webannotations</li>
+                                <li><a
+                                        href="http://www.steinheim-institut.de/cgi-bin/epidat?info=geobrowser&amp;lang=en"
+                                        >Geo-Browser</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="six columns">
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/epidat_geobrowser.png">
+                                <img src="resources/img/epidat_geobrowser.png" /></a>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            -->
+            <div class="step">
+                <h2 class="red centered">epidat – access options</h2>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-hash="/step-10/substep-1">
+                            <div class="six columns first">
+                                <div class="mfp-lightbox row"><p>
+                                        <a href="resources/img/epidat_access_options.png">
+                                            <img class="pull-up"
+                                                src="resources/img/epidat_access_options.png"
+                                                style="width:100%" />
+                                        </a></p></div>
+                                <p class="centered pull-up">
+                                    <a
+                                        href="http://steinheim-institut.de/cgi-bin/epidat?lang=en#opt"
+                                        title="access options"
+                                        >http://steinheim-institut.de/cgi-bin/epidat</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Browse</strong></h5>
+                                <ul class="even-left medium line-height-one-five">
+
+                                    <li> chronological<ul>
+                                            <li>by year</li>
+                                            <li>by period</li>
+                                        </ul>
+                                    </li>
+                                    <li> topographical<ul>
+                                            <li>by place</li>
+                                            <li>by region</li>
+                                            <li>by map</li>
+                                        </ul></li>
+                                    <li> visual – by images </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-10/substep-2">
+                            <div class="six columns first"><div class="mfp-lightbox row"><p>
+                                        <a href="resources/img/epidat_fulltext_search.png">
+                                            <img class="pull-up"
+                                                src="resources/img/epidat_fulltext_search.png"
+                                                style="width:100%" />
+                                        </a></p></div>
+                                <p class="centered pull-up">
+                                    <a
+                                        href="http://www.steinheim-institut.de/cgi-bin/epidat?beg=&amp;end=&amp;sel=ad2%27aha%27alt%27ans%27ar1%27asc%27bme%27arl%27bay%27bee%27c02%27bng%27blr%27sb3%27bom%27gda%27gdn%27bnm%27bns%27bor%27hrs%27wal%27e51%27bri%27alm%27mad%27e01%27e99%27e02%27brh%27che%27c01%27dds%27din%27e03%27e04%27ap2%27ap1%27dor%27hoe%27c03%27du2%27du3%27du4%27du1%27du6%27du5%27erc%27erf%27wsw%27seg%27est%27wrd%27kuc%27ffb%27ffs%27ffh%27frd%27e05%27e52%27gsk%27gws%27e10%27e11%27e12%27e13%27e14%27hgl%27hgw%27hb2%27hbs%27hha%27hht%27hmr%27hdh%27hnn%27hns%27hlh%27blu%27hen%27hld%27hos%27hxf%27c05%27ils%27imr%27ihl%27iis%27irw%27igw%27e06%27jen%27e17%27e18%27e19%27kal%27e20%27kob%27kwr%27e21%27e22%27kre%27e23%27e42%27e43%27wnk%27lag%27lau%27lin%27mz2%27e25%27sb1%27msn%27min%27e26%27e31%27e30%27e29%27e27%27e28%27mlh%27mue%27e32%27e41%27sb5%27e33%27c06%27obh%27obl%27obw%27oer%27ora%27sb0%27l06%27pro%27que%27reg%27rex%27bbr%27e54%27e53%27e34%27e35%27rth%27oes%27sbs%27sb2%27sb9%27sb6%27l08%27srm%27e09%27e16%27smk%27st3%27e36%27sgb%27e58%27sdh%27sts%27spy%27sb7%27sb8%27sb4%27roe%27e37%27e44%27e60%27e61%27l07%27e38%27e39%27e40%27lom%27ver%27e07%27e08%27win%27wrm%27hdf&amp;sm=OR&amp;check=1&amp;wo=edueb&amp;suche=Jerusalem+*%E2%80%8E%E2%80%8Fירושלי%E2%80%8F%E2%80%8E%3F&amp;function=suche&amp;anzeige=ffb&amp;lang=en"
+                                        title="access options"
+                                        >http://steinheim-institut.de/cgi-bin/epidat</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Access</strong></h5>
+                                <ul class="even-left medium line-height-one-five">
+
+                                    <li> via full-text search </li>
+                                    <li> via indices<ul>
+                                            <li><a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;lang=en&amp;anzeige=stm&amp;view=lfh#lfh"
+                                                  >artists and stonemasons</a></li>
+                                            <li><a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=memorials&amp;lang=en"
+                                                  >memorials</a></li>
+                                            <li><a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?info=index&amp;anzeige=symbols&amp;lang=en"
+                                                  >symbols</a><ul>
+                                                  <li>ornaments</li>
+                                                  <li>house-symbols</li>
+                                                </ul></li>
+                                            <li>persons</li>
+                                            <li>languages</li>
+                                            <li>words and abbrevations</li>
+                                            <li>quotations</li>
+                                        </ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-hash="/step-10/substep-3">
+                            <div class="six columns first"><div class="mfp-lightbox row">
+                                    <a href="resources/img/lilies_Geo-Browser.png">
+                                        <img class="pull-up"
+                                            src="resources/img/lilies_Geo-Browser.png"
+                                            style="width:100%" />
+                                    </a></div>
+                                <p class="centered pull-up">
+                                    <a
+                                        href="http://steinheim-institut.de/cgi-bin/epidat?lang=en#opt"
+                                        title="access options"
+                                        >http://steinheim-institut.de/cgi-bin/epidat</a>
+                                </p>
+                            </div>
+                            <div class="six columns last">
+                                <h5><strong>Analyze /w embedded webservices </strong></h5>
+                                <ul class="even-left medium line-height-one-five">
+
+                                    <li> for visualization <ul>
+                                            <li><a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?info=geobrowser&amp;lang=en"
+                                                  >DARIAH-DE Geo-Browser</a></li>
+                                        </ul></li>
+                                    <li> for annotation<ul>
+                                            <li><a
+                                                  href="http://www.steinheim-institut.de/cgi-bin/epidat?id=hha-3361"
+                                                  >DARIAH-DE Annotation Service</a></li>
+                                        </ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">Examples</h2>
+                <h3>flowers and shoes</h3>
+            </div>
+            <div class="step">
+                <h2 class="red">Lilies of Worms</h2>
+                <!-- <h3 class="red >Beispiele</h3> -->
+                <h3>A unique floral symbol found "Im Heiligen Sand" – Worms</h3>
+                <div class="mfp-lightbox row">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="resources/img/lilie_1218_wrm-103.png" title="wrm-103"><img
+                                    src="resources/img/lilie_1218_wrm-103.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/lilie_before_1290_wrm-423.png" title="wrm-423"><img
+                                    src="resources/img/lilie_before_1290_wrm-423.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/lilie_1296_wrm-999.png" title="wrm-999"><img
+                                    src="resources/img/lilie_1296_wrm-999.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/lilie_1320_wrm-1090.png" title="wrm-1090"><img
+                                    src="resources/img/lilie_1320_wrm-1090.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/lilie_1492_wrm-692.png" title="wrm-692"><img
+                                    src="resources/img/lilie_1492_wrm-692.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/lilie_1493_wrm-778.png" title="wrm-778"><img
+                                    src="resources/img/lilie_1493_wrm-778.png" /></a>
+                            </td>
+                            
+                        </tr>
+                    </table>
+                </div>
+                <table>
+                    <tr>
+                        <td>1218</td>
+                        <td>vor 1290</td>
+                        
+                        <td>1296</td>
+                        <td>1320</td>
+                        
+                        <td>1492</td>
+                        <td>1493</td>
+                    </tr>
+                    <tr class="small">
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm-103"
+                            >wrm-103</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm-423"
+                            >wrm-423</a></td>
+                        
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm-999"
+                            >wrm-999</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-1090"
+                            >wrm-1090</a></td>
+                        
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm-692"
+                            >wrm-692</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=wrm-778"
+                            >wrm-778</a></td>
+                    </tr>
+                    
+                    <tr class="x-small">
+                        <td>Schlomo ben Natan</td>
+                        <td>Channa bat Jehuda</td>
+                        
+                        <td>Juta bat Josef</td>
+                        <td>Meir ben Elieser</td>
+                        
+                        <td>Jachet bat Ascher Halevi</td>
+                        <td>Dolza bat Schmuel</td>
+                    </tr>
+                </table>
+                <!-- 
+                <blockquote class="substep down-50 centered">… and displaying 200 years of
+                    shoe-design engraved in headstones</blockquote>
+                    -->
+            </div>
+            <div class="step"><h2 class="red">Lilies of Worms</h2>
+                <div class="row">
+                    <div class="mfp-lightbox six columns">
+                        <a href="resources/img/lilies_Geo-Browser.png"><img
+                            src="resources/img/lilies_Geo-Browser.png" /></a>
+                    </div>
+                    <div class="six columns">
+                        <p class="line-height-one-five"> spatio-temporal vizualized in the <a href="">DARIAH-DE
+                            Geo-Browser</a> <!-- spatio-temporal data-visualization of
+                            symbols found on Jewish headstones via <a href="">DARIAH-DE
+                                Geo-Browser</a> (embedded) --> </p>
+                        <ul>
+                            <li>place</li>
+                            <li>date</li>
+                            <li>symbol</li>
+                            <li>name</li>
+                        </ul>
+                        <p class="x-small"> Michael Brocke: The lilies of Worms. In: Zutot 8 (2011),
+                            3-13 <br /><a
+                                href="http://steinheim-institut.de/cgi-bin/epidat?info=geobrowser&amp;lang=en"
+                                >http://steinheim-institut.de/cgi-bin/epidat?info=geobrowser&amp;lang=en</a>
+                        </p>
+                    </div>
+                </div></div>
+            <div class="step">
+                <h2 class="red">Shoes of Frankfurt</h2>
+                <!-- <h3 class="red >Beispiele</h3> -->
+                <h3>A Frankfurt house emblem becoming a familyname</h3>
+                <div class="mfp-lightbox row">
+                    <table>
+                        <tr>
+                            <td>
+                                <a href="resources/img/shoe_ffb-444.png" title="ffb-444"><img
+                                    src="resources/img/shoe_ffb-444.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/shoe_ffb-2057.png" title="ffb-2057"><img
+                                    src="resources/img/shoe_ffb-2057.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/shoe_ffb-55.png" title="ffb-55"><img
+                                    src="resources/img/shoe_ffb-55.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/shoe_ffb-1584.png" title="ffb-1584"><img
+                                    src="resources/img/shoe_ffb-1584.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/shoe_ffb-52.png" title="ffb-52"><img
+                                    src="resources/img/shoe_ffb-52.png" /></a>
+                            </td>
+                            <td>
+                                <a href="resources/img/shoe_ffb-1678.png" title="ffb-1678"><img
+                                    src="resources/img/shoe_ffb-1678.png" /></a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <table>
+                    <tr>
+                        <td>1607</td>
+                        <td>1612</td>
+                        
+                        <td>1774</td>
+                        <td>1782</td>
+                        
+                        <td>1795</td>
+                        <td>1805</td>
+                    </tr>
+                    <tr class="small">
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-444"
+                            >ffb-444</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-2057"
+                            >ffb-2057</a></td>
+                        
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-55"
+                            >ffb-55</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-1584"
+                            >ffb-1584</a></td>
+                        
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-52"
+                            >ffb-52</a></td>
+                        <td><a href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-1678"
+                            >ffb-1678</a></td>
+                    </tr>
+                    
+                    <tr class="x-small">
+                        <td>Schlomo Schuh Grotwol</td>
+                        <td>Breinlen bat Schlomo</td>
+                        
+                        <td>Joswel ben Schlomo Schuh</td>
+                        <td>Schönle bat David Rapp</td>
+                        
+                        <td>Breinche bat Süskind Leidersdorf</td>
+                        <td>Gitle bat Izek ben Jaakow Hanau SeGaL</td>
+                    </tr>
+                </table>
+                <blockquote class="substep down-50 centered">… and displaying 200 years of
+                    shoe-design engraved in headstones</blockquote>
+            </div>
+            <div class="step"><h2 class="red">more examples</h2>
+                <p>… only if there is time left: flight from headstone to bookshelf</p>
+                <fieldset><legend>live demo</legend>butterflies – vlinders - papillon – Schmetterling</fieldset></div>
+            <div class="step">
+                <div class="centered">
+                    <h2 class="red">challenge</h2>
+                    <h3><span class="red">How to</span> dis|un|cover the unexpected ?</h3>
+                    <blockquote class="down-50 justify">Names, Persons, <a
+                        href="https://kollatzthomas.github.io/2017_Leeds_IMC/#/step-11"
+                        >Symbols</a>, ornaments, decoration, etc. found on Jewish headstones as
+                        well as biblical and rabbinic quotations or poetry as part of the epitaphs
+                        or the materials of the headstones or the type of script used are not
+                        strictly limited to the field of epigraphy or Jewish Studies.<ul
+                            class="line-height-one-five down-50 justify">
+                            <li class="substep">Linked Open Data could help to disseminate <q>more
+                                or less</q> accidental spinoff-results</li>
+                            <li class="substep">Linked Open Data are a way to make known all kind of
+                                <em>facts</em> uncovered in epigraphic research to neighbouring
+                                knowledge sectors (Jewish studies, Cultural Studies, History of Art,
+                                and Literature)</li>
+                        </ul>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="step">
+                <h1 class="red">03</h1>
+                <h2 class="line-height-one-five">Linked Open Data <abbr>[LOD]</abbr></h2></div>
+            <div class="step">
+                <h2 class="red">WWW vs LOD</h2>
+                <div class="substep"><div class="row">
+                        <div class="six columns">
+                            <dl class="line-height-one-five">
+                                <dt><abbr>WWW</abbr></dt>
+                                <dd>World Wide Web</dd>
+                                <dd>links between documents</dd>
+                            </dl></div><div class="six columns"><img
+                                src="resources/img/links_between_docs.png" /></div>
+                    </div></div><div class="substep"><div class="row">
+                        <div class="six columns">
+                            <dl class="line-height-one-five">
+                                <dt><abbr>LOD</abbr></dt>
+                                <dd>Linked Open Data</dd>
+                                <dd><abbr>aka</abbr> Semantic Web</dd>
+                            </dl>
+                            <ul class="line-height-one-five">
+                                <li>provides (Semantic) links between data</li>
+                                <li><span class="subject-color">subject</span>
+                                    <span class="predicate-color">predicate</span>
+                                    <span class="object-color">object</span></li>
+                                <li><span class="subject-color">name</span>
+                                    <span class="predicate-color">is_mentioned_in</span>
+                                    <span class="object-color">source</span></li></ul></div>
+                                
+                            <div class="six columns"><div class="down-100"><img
+                                    src="resources/img/links_between_data.png" /></div></div>
+                    </div>
+                        <div class="substep"><blockquote>Semantic Web is breaking down the data silos</blockquote>
+                            <p class="x-small right">Tim Berners-Lee: <a href="https://www.youtube.com/watch?v=OM6XIICm_qo">The next Web of open, linked data</a></p></div>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">Explicit Semantics</h2>
+                <pre>
+                    <code class="xml x-small">                             
+                 
+<span class="subject-color">Subject    &lt;http://steinheim-institut.de/cgi-bin/epidat?id=ffb-80-1&gt; </span>
+             
+<span class="predicate-color">Predicate  sameAs </span>
+                        
+<span class="object-color">Object     &lt;http://d-nb.info/gnd/11879132X&gt; </span>
+
+.</code></pre>
+                <blockquote class="down-50"><q>Linked [Open] Data</q> need
+                    <strong>access</strong> to data, whereby <strong>relationship</strong>
+                    between those data should be made explicit</blockquote>
+                <p class="right x-small">more: <a
+                    href="https://www.w3.org/standards/semanticweb/data"
+                    >https://www.w3.org/standards/semanticweb/data</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">Linked Open Data – in practice</h2>
+                <div class="row">
+                    <div class="six columns">
+                        <div class="mfp-lightbox row">
+                            <a href="resources/img/linked_rothschild.png"><img
+                                src="resources/img/linked_rothschild.png" />
+                            </a>
+                        </div>
+                        <div><p class="x-small"><a
+                            href="http://steinheim-institut.de/cgi-bin/epidat?id=ffb-80-1"
+                            >http://steinheim-institut.de/cgi-bin/epidat?id=ffb-80-1</a><br /><a
+                                href="http://steinheim-institut.de/daten/beacon.txt"
+                                >http://steinheim-institut.de/daten/beacon.txt</a></p>
+                        </div>
+                    </div>
+                    <div class="six columns">
+                        <p class="line-height-one-five small">By providing the
+                            GND-Identification-number more information about the person in question
+                            is <code>on the fly</code> dynamically provided by harvesting other
+                            online databases, which also refer to the person with the unique identifier
+                            <code>11879132X</code></p>
+                        <ul class="line-height-one-five small">
+                            <li>easy</li>
+                            <li>effective</li>
+                            <li>inspiring new | further research</li>
+                            <li><a
+                                href="https://www.deutsche-digitale-bibliothek.de/entity/11879132X"
+                                >vice versa</a>: our data a available outside our limited domain</li>
+                        </ul>
+                        <div class="mfp-lightbox"><p><a href="resources/img/linked_sources.png"><img
+                            src="resources/img/linked_sources.png" /></a></p></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <div class="step">
+                <h2 class="red">Vocabularies and Authority-files</h2>
+                <h4>Places</h4><ul>
+                    <li>TGN – Getty Thesaurus for Geographical Names<ul>
+                            <li><a href="http://vocab.getty.edu/tgn/7006952">Amsterdam</a></li>
+                        </ul></li>
+                    <li>GeoNames<p class="justify down-25 small"><q>The <a
+                                    href="http://www.geonames.org">GeoNames</a> geographical
+                                database covers all countries and contains over eleven million
+                                placenames that are available for download free of
+                        charge.</q></p></li>
+                    <li><a href="https://pleiades.stoa.org">Pleiades</a>
+                        <p class="justify down-25 small"><q>a community-built gazetteer and graph of
+                                ancient places.</q></p></li>
+                </ul>
+                <h4>Names</h4><ul>
+                    <li>GND (Gemeinsame Normdatei) in <a
+                            href="http://steinheim-institut.de/cgi-bin/epidat?id=hha-5050-1"
+                            >epidat</a></li>
+                </ul>
+                <!-- <li>quotations</li> -->
+                <h4>Classification</h4>
+                <ul>
+                    <li><a href="http://www.eagle-network.eu/resources/vocabularies/">for Epigraphy
+                            – EAGLE Vocabularies</a>
+                        <p class="justify down-25 small"><q>A digital vocabulary in a structured
+                                data format allows to be flexible, align data and harmonize content
+                                without forcing one or the other project or publication to change
+                                its mind about the structure used.</q></p></li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2 class="red">Controlled vocabularies </h2>
+                <h3><span class="red">☞</span> Use Thesauri and Authority files</h3>
+                <ul class="line-height-one-five medium">
+                    <li>the <a href="http://www.iconclass.org/rkd/25G41%28LILY%29/">symbol
+                        <em>Lilie</em></a> can be traced in <a
+                            href="http://www.getty.edu/research/tools/vocabularies/aat/about.html"
+                            >Iconclass</a>
+                        <q>a multilingual classification system for cultural content</q>
+                    </li>
+                    <li>the <a
+                        href="http://www.getty.edu/vow/AATFullDisplay?find=shoe&amp;logic=AND&amp;note=&amp;subjectid=300046065"
+                        >object or concept <em>shoe</em></a> is found in <a href="">Arts and
+                            Architecture Thesaurus</a>
+                        <q>to improve access to information about art, architecture, and material
+                            culture</q>
+                    </li>
+                    <li>the settlement <a
+                        href="http://www.getty.edu/vow/TGNServlet?english=Y&amp;find=Frankfurt&amp;place=inhabited+place&amp;page=1&amp;nation="
+                        ><em>Frankfurt</em> on the Main</a> is identified in the <a href=""
+                            >Thesaurus of Geographic Names </a> and by this distinguished from two
+                        other German towns named Frankfurt </li>
+                    <li><a href="http://d-nb.info/gnd/11879132X">names of persons</a> have unique identifiers in the GND-database
+                        of the German National Library and other National Library catalogues</li>
+                </ul></div>
+                <div class="step">
+                    <h2 class="red">Controlled vocabularies </h2>
+                <h3>florilegium – lilies
+                </h3>
+                <ul class="line-height-one-five">
+                <li>Wasserzeichen<ul>
+                    <li><a
+                        href="https://www.wasserzeichen-online.de/wzis/struktur.php?klassi=004001003"
+                        >Wasserzeichen-Informationssystem</a></li>
+                </ul></li>
+                <li>Emblematica<ul>
+                    <li><a
+                        href="http://emblematica.grainger.illinois.edu/search/emblems?query.keywords=lilies"
+                        >Emblematica Online</a></li>
+                    <li><a
+                        href="http://emblematica.grainger.illinois.edu/browse/iconclass/en/25G41(LILY)"
+                        >Iconclass Headings</a></li>
+                </ul>
+                </li>
+                <li><a
+                    href="http://www.virtuelles-kupferstichkabinett.de/?subPage=search&amp;selTab=3&amp;currentWerk=17195"
+                    >Virtuelles Kupferstichkabinett</a></li>
+                <li><a href="http://iconclass.org/rkd/25G41(LILY)/">IconClass – 25G41</a></li>
+            </ul></div>
+            <div class="step">
+                <h1 class="red">04</h1>
+                <h2 class="line-height-one-five"> Text encoded </h2>
+            </div>
+            <div class="step">
+                <h2 class="red centered">What is XML</h2>
+                <div>
+                    <dl class="medium">
+                        <dt class="red">XML</dt>
+                        <dd>Extensible Markup Language </dd>
+                    </dl>
+                    <ul class="line-height-one-five down-50">
+                        <li>semantic in stead of typography</li>
+                        <li>device-independent and system-independent storing and processing of
+                            texts in electronic form</li>
+                        <li>interchange and communication format </li>
+                    </ul>
+                    <blockquote class="medium down-50"> Generalizing … we define markup, or
+                        (synonymously) encoding, as any means of making explicit an interpretation
+                        of a text. </blockquote>
+                    <p class="right x-small">
+                        <a href="http://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">A
+                            Gentle Introduction to XML</a></p>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red centered">What is TEI XML</h2>
+                <dl class="medium">
+                    <dt class="red">TEI</dt>
+                    <dd>Text Encoding Initiative</dd>
+                </dl>
+                <blockquote class="medium down-50">[The TEI] is a consortium which collectively
+                    develops and maintains a <span class="highlight">standard for the representation
+                        of texts in digital form</span>. Its chief deliverable is a set of
+                    Guidelines which specify encoding methods for machine-readable
+                    texts<!--, chiefly in the
+                                humanities, social sciences and linguistics.-->
+                </blockquote>
+                <p class="right x-small"><a href="http://www.tei-c.org">http://www.tei-c.org</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">TEI delivers Guidelines</h2>
+                <div class="mfp-lightbox row">
+                    <p>
+                        <a href="resources/img/tei-c.png"><img
+                            src="resources/img/TEI_Guidelines.png" title="TEI_guidelines"
+                            style="width:60rem" /></a>
+                    </p>
+                    <p class="right x-small"><a href="http://www.tei-c.org"
+                        >http://www.tei-c.org/release/doc/tei-p5-doc/en/html/</a></p>
+                </div>
+            </div>
+            <div class="step">
+                <h2 class="red">The Guidelines</h2>
+                <p class="justified"> The TEI Guidelines for Electronic <strong>Text Encoding and
+                    Interchange</strong> define and document a <strong>markup language for
+                        representing the structural, renditional, and conceptual features of
+                        texts</strong>. They focus (though not exclusively) on the encoding of
+                    documents in the humanities and social sciences, and in particular on the
+                    representation of primary source materials for research and analysis. These
+                    guidelines are expressed as a modular, extensible XML schema, accompanied by
+                    detailed documentation, and are published under an open-source license. </p>
+                <p class="x-small">link <a href="http://www.tei-c.org/Guidelines/"
+                    >http://www.tei-c.org/Guidelines/</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">example</h2>
+                <p>Something is [rotten] in the state of Denmark</p>
+                <pre class="substep"><code class="xml">&lt;p&gt;
+ Something is 
+   &lt;damage agent="inkstain"
+           extent="6" 
+           unit="chars"&gt;
+       &lt;supplied cert="high" 
+                 confidence="100" 
+                 reason="damage" 
+                 evidence="external"
+                 resp="editio_princeps"&gt;
+           rotten
+       &lt;/supplied&gt;
+   &lt;/damage&gt; in the state of 
+   &lt;placeName ref="http://vocab.getty.edu/tgn/1000066"&gt;
+       Denmark
+   &lt;/placeName&gt;
+&lt;/p&gt;</code></pre>
+                <blockquote class="centered substep"><span class="red">☞</span> Use of TEI XML is
+                    Close Reading <span class="red">☜</span></blockquote>
+            </div>
+            <!--
+            <div class="step">
+                <h2 class="red">Text Encoding Initative (TEI)</h2>
+                <p class="justify">The <strong>Text Encoding Initiative</strong> (TEI) is a
+                    consortium which collectively develops and maintains a <strong>standard for the
+                        representation of texts in digital form</strong>. Its chief deliverable is a
+                    set of Guidelines which specify <strong>encoding methods for machine-readable
+                        texts</strong>, chiefly in the humanities, social sciences and linguistics.
+                    Since 1994, the TEI Guidelines have been widely used by libraries, museums,
+                    publishers, and individual scholars to present texts for online research,
+                    teaching, and preservation. In addition to the Guidelines themselves, the
+                    Consortium provides a variety of resources and training events for learning TEI,
+                    information on projects using the TEI, a bibliography of TEI-related
+                    publications, and software developed for or adapted to the TEI.</p>
+                <p class="x-small">link <a href="http://www.tei-c.org">tei-c.org</a></p>
+            </div>
+            --> 
+            
+            
+            <div class="step">
+                <h2 class="red"> Text as Code</h2>
+                <pre><code>Ik ben makelaar in koffi, en woon op de Lauriergracht No 37. Het
+is mijn gewoonte niet, romans te schrijven, of zulke dingen, en het heeft dan
+ook lang geduurd, voor ik er toe overging een paar riem papier extra te
+bestellen, en het werk aan te vangen, dat gij, lieve lezer, zoâven in de hand
+hebt genomen, en dat ge lezen moet als ge makelaar in koffie zijt, of als ge wat
+anders zijt. Niet alleen dat ik nooit iets schreef wat naar een roman geleek,
+maar ik houd er zelfs niet van, iets dergelijks te lezen, omdat ik een man van
+zaken ben. Sedert jaren vraag ik mij af, waartoe zulke dingen dienen, en ik sta
+verbaasd over de onbeschaamdheid, waarmee een dichter of romanverteller u iets
+op de mouw durft spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.
+                </code></pre>
+                <p class="x-small">source: <a href="http://cf.hum.uva.nl/dsp/ljc/multatuli/"
+                        >http://cf.hum.uva.nl/dsp/ljc/multatuli/</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red">Text encoded</h2>
+                <pre><code class="js" style="font-size:1.5rem">&lt;TEI&gt;
+&lt;teiHeader&gt;
+&lt;/teiHeader&gt;
+   &lt;text&gt;
+      &lt;body&gt;
+         &lt;p&gt;&lt;persName ref="#MH"&gt;Ik&lt;/persName&gt; ben 
+         &lt;rs type="job"&gt;makelaar in &lt;w lemma="koffie"&gt;koffi&lt;/w&gt;&lt;/rs&gt;, 
+         en woon op de &lt;placeName ref="http://vocab.getty.edu/tgn/7006952"&gt;&lt;address&gt;
+                  &lt;street&gt;Lauriergracht No 37&lt;/street&gt;
+               &lt;/address&gt;&lt;/placeName&gt;. 
+            Het is mijn gewoonte niet, romans te schrijven, of zulke
+            dingen, en het heeft dan ook lang geduurd, voor ik er toe overging een paar riem papier
+            extra te bestellen, en het werk aan te vangen, dat gij, lieve lezer, &lt;choice&gt;
+               &lt;corr&gt;zoeven&lt;/corr&gt;
+               &lt;orig&gt;zoâven&lt;/orig&gt;
+            &lt;/choice&gt; in de hand hebt genomen, en dat ge lezen moet als ge makelaar in koffie zijt,
+            of als ge wat anders zijt. Niet alleen dat ik nooit iets schreef wat naar een roman
+            geleek, maar ik houd er zelfs niet van, iets dergelijks te lezen, omdat ik een man van
+            zaken ben. Sedert jaren vraag ik mij af, waartoe zulke dingen dienen, en ik sta verbaasd
+            over de onbeschaamdheid, waarmee een dichter of romanverteller u iets op de mouw durft
+            spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.&lt;/p&gt;
+      &lt;/body&gt;
+   &lt;/text&gt;
+&lt;/TEI&gt;                    
+                </code></pre>
+                <p class="x-small"><a href="data/max_havelaar.xml">example</a></p>
+            </div>
+            <div class="step">
+                <h2 class="red"> Text is pluralistic </h2>
+                <p class="justify">
+                    <img
+                        src="https://f.hypotheses.org/wp-content/blogs.dir/719/files/2015/04/Bildschirmfoto-2015-04-19-um-20.19.49.png"
+                     />
+                </p>
+                <p class="x-small">source: <a href="https://texperimentales.hypotheses.org/1318"
+                        >https://texperimentales.hypotheses.org/1318 – Clash of Concepts: Text</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">Digital Editing in a Virtual Research Environment</h2>
+                <p><iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/rchdyegdkZc?rel=0" frameborder="0" allowfullscreen="allowfullscreen"
+                    ></iframe>
+                    <!--frameborder="0" allowfullscreen="allowfullscreen"
+                    ></iframe>--><!-- frameborder="0" allowfullscreen --></p>
+                <p class="x-small">source: <a href="https://www.youtube.com/watch?v=rchdyegdkZc"
+                        >https://www.youtube.com/watch?v=rchdyegdkZc</a></p>
+            </div>
+            <!--          <div class="step">
+                <h1 class="red">03</h1>
+                <h2 class="line-height-one-five"> Digital Humanities and Book History </h2>
+            </div> -->
+            <div class="step">
+                <h1 class="red">05</h1>
+                <h2> To read or not to read – Is that the question </h2>
+            </div>
+            <div class="step">
+                <h2 class="red">Big Data</h2>
+                <h3>John Unsworth et. al</h3>
+                <h4><a href="http://www.people.virginia.edu/~jmu2m/hownot2read.html">How not to read
+                        one million books</a></h4>
+                <ul class="line-height-one-five">
+                    <li><em>Text-Mining</em> versus <em>search engine</em></li>
+                    <li>Monk project – <strong>M</strong>etadata <strong>O</strong>ffer
+                            <strong>N</strong>ew <strong>K</strong>nowledge</li>
+                    <li><em>recommendation</em>
+                        <a href="http://new.livestream.com/accounts/2263400/events/3512861">History
+                            of Computional Methods in the Humanities and Other Domains</a></li>
+                    <li>examples<ul class="line-height-one-five">
+                            <li><a href="http://www.people.virginia.edu/~jmu2m/hn2f15.jpg">Words
+                                    Jane Austen avoids</a></li>
+                            <li><a href="http://www.people.virginia.edu/~jmu2m/hn2f16.jpg">Words
+                                    more common in novel's written by man</a></li>
+                        </ul></li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2 class="red">Distant Reading</h2>
+                <h3>Franco Moretti</h3>
+                <ul class="line-height-one-five">
+                    <li><q>Distance … is not an obstacle, but an specific form of knowledge: fewer
+                            elements, hence a sharper sense of their overall interconnection.
+                            Shapes. relations, structures. Forms. Models.</q> Moretti 2005</li>
+                    <li><a
+                            href="http://www.mat.ucsb.edu/~g.legrady/academic/courses/09w259/Moretti_graphs.pdf"
+                            >Graphs, Maps, Trees: Abstract Models for Literary History</a></li>
+                    <li><a href="http://litlab.stanford.edu">Stanford Literary Lab</a></li>
+                </ul>
+            </div>
+            <div class="step">
+                <h2 class="red">Macroanalysis</h2><h3>Matthew Jockers</h3>
+                
+                <h4></h4><ul class="line-height-one-five">
+                    <li>It's analysis not reading !</li>
+                    <li>Macroanalysis – <q>Exploring the potential of large-scale digital literary
+                            analysis</q></li>
+                    <li><a href="http://www.matthewjockers.net">http://matthewjockers.net</a></li>
+                </ul>
+                <h3>Ted Underwood</h3>
+                <ul class="line-height-one-five">
+                    <li><a href="http://ted.underwood.com">the Stone and the shell</a></li>
+                    <li>Historical questions raised by a quantitative approach to language </li>
+
+                </ul></div>
+            <div class="step"><h2 class="red">Stylometrie</h2>
+                <h3>Jan Rybicki et al.</h3>
+                
+                <ul class="line-height-one-five">
+                    <li>Visualizing Literature</li>
+                    <li><a href="https://prezi.com/sozwiifzgfbp/">Trees, Maps and Networks</a></li>
+                </ul>
+            </div>
+            <div class="step">
+                <h1 class="red">06</h1>
+                <h2 class="line-height-one-five"> Digital Humanities, Libraries and Book History </h2>
+                <ul class="line-height-one-five">
+                    <li>librarians have been metadata experts for centuries</li>
+                    <li>libraries as text providers – data storage </li>
+                    <li>libraries should establish digital infrastructure</li>
+                    <li>rule: Digital Text should be text not an Image</li>
+                    <li>… </li>
+                </ul>
+            </div>
+            <div class="step">
+                <div class="centered">
+                    <h1>F I N I S</h1>
+                    <h2>Thank you</h2>
+                </div>
+            </div>
+            <div class="step">
+                <h2>Literature &amp; Software</h2>
+                <h4>Literature</h4>
+                <ul class="small">
+                    <li>Bibliography <a href="https://de.dariah.eu/bibliographie">Doing Digital
+                            Humanities</a></li>
+                    <li>Franco Moretti: Graphs, Maps, Trees: Abstract Models for Literary History,
+                        2005 </li>
+                    <li>Matthew L. Jockers: Macroanalysis. Digital Methods and Literary History,
+                        2013</li>
+                    <li><a href="http://dhd2016.digitale-akademie.de/workshop/index.html">Methods
+                            and Tools for visualising Digital Humanities data sets</a></li>
+
+                </ul>
+                <h4>Software</h4>
+                <ul class="small">
+                    <li>
+                        <a href="http://dirtdirectory.org">DIRT – Digital Research Tools</a>
+                    </li>
+                    <li> To begin with – <a href="https://de.dariah.eu/geobrowser">DARIAH-DE
+                            GeoBrowser</a> and <a href="https://geobrowser.de.dariah.eu/edit/"
+                            >DataSheetEditor</a>
+                    </li>
+
+
+
+                </ul>
+                <h4>Download</h4>
+                <ul class="small">
+                    <li> Link: <a
+                            href="https://kollatzthomas.github.io/20180129_DH_Methods_and_Tools/">
+                            https://kollatzthomas.github.io/20180129_DH_Methods_and_Tools/ </a>
+                    </li>
+                    <li> License: <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY
+                            4.0</a>, <a href="http://orcid.org/0000-0003-1904-1841">Thomas
+                            Kollatz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
+        <!-- unite gallery -->
+        <script type="text/javascript" src="vendor/unitegallery/js/unitegallery.min.js"></script>
+        <script type="text/javascript" src="vendor/unitegallery/themes/tiles/ug-theme-tiles.js"></script>
+        <script type="text/javascript" src="resources/js/unite.gallery.js"></script>
+        <!-- chartist -->
+        <script src="vendor/chartist/chartist.min-0.9.7.js"></script>
+        <script src="resources/js/chartist.charts.js"></script>
+        <!-- codemirror -->
+        <script src="vendor/codemirror/lib/codemirror.js"></script>
+        <script src="vendor/codemirror/addon/edit/matchbrackets.js"></script>
+        <script src="vendor/codemirror/mode/sparql/sparql.js"></script>
+        <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("sparql"), {
+            mode: "application/sparql-query",
+            matchBrackets: true,
+            lineNumbers: true,
+            viewportMargin: Infinity
+        });
+    </script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack-9.3.0.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="resources/js/hljs.linenumbering.js"></script>
+        <!-- swiper -->
+        <script src="vendor/swiper/swiper.min.js"></script>
+        <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            spaceBetween: 30,
+            hashnav: true
+        });
+    </script>
+        <!-- magnific popup -->
+        <script src="vendor/magnific-popup/jquery.magnific-popup.min-1.1.0.js"></script>
+        <script src="resources/js/magnific-popup.lightbox.js"></script>
+        <!-- impress.mod.js -->
+        <script src="vendor/impress/impress.fork.js"></script>
+        <script src="vendor/impress/impress-slidenum.js"></script>
+        <script>
+        var obj = impress();
+        obj.init();
+        initSlideNo(obj);
+    </script>
+        <!--    <script>
+            var videoStep = document.getElementById("video-step");
+var video = document.getElementById("video");
+videoStep.addEventListener("impress:stepenter", function() {
+    video.play();
+}, false);
+videoStep.addEventListener("impress:stepleave", function() {
+    video.pause();
+}, false);
+        </script> -->
+    </body>
+</html>
