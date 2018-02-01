@@ -59,6 +59,10 @@
 
         <!-- html5 dataset shim for IE -->
         <script src="vendor/impress/html5-dataset.js" type="text/javascript"></script>
+        
+        <!-- vis -->
+        <script type="text/javascript" src="vendor/vis/vis.js"></script>
+        <link rel="stylesheet" href="vendor/vis/vis-network.min.css"  type="text/css" />
 
     </head>
 
@@ -70,11 +74,16 @@
                     <strong>Safari</strong> or <strong>Firefox</strong> browser. </p>
         </div>
         <div id="impress">
-            <div class="step">
+            
+            <div id="start" class="step" data-autoplay="10">
+                         
                 <h4><strong>2018-01-29</strong> | <a href="#">Amsterdam</a></h4>
                 <h4><strong>college: Oude Boeken in een nieuwe wereld</strong></h4>
                 <h1 class="down-100">Digital Humanities</h1>
                 <h2 class="red up-25">methods and tools</h2>
+                <div class="hint">
+                    <p>☞ Use a spacebar or arrow keys to navigate. </p>
+                </div>
                 <h4 class="down-100">
                     <strong>Slides:</strong>
                     <a href="https://kollatzthomas.github.io/20180129_DH_Methods_and_Tools/"
@@ -94,6 +103,20 @@
                         >CC-BY 4.0</a>
                 </h5>
             </div>
+           
+                
+                
+                
+                
+                    
+                    
+                    
+                    
+                
+                
+                
+                
+            
             <div class="step">
                 <h2>Table of Contents</h2>
                 <ol class="line-height-one-five">
@@ -625,8 +648,38 @@
                                     <span class="predicate-color">is_mentioned_in</span>
                                     <span class="object-color">source</span></li></ul></div>
                                 
-                            <div class="six columns"><div class="down-100"><img
-                                    src="resources/img/links_between_data.png" /></div></div>
+                            <div class="six columns"><div class="down-100">
+                                <div id="mynetwork"></div>
+                                
+                                <script type="text/javascript">
+  // create an array with nodes
+  var nodes = new vis.DataSet([
+    {id: 1, label: 'source_a'},
+    {id: 2, label: 'name'},
+    {id: 3, label: 'place'},
+    {id: 4, label: 'source_b'},
+    {id: 5, label: 'source_c'}
+  ]);
+
+  // create an array with edges
+  var edges = new vis.DataSet([
+    {from: 1, to: 3},
+    {from: 1, to: 2},
+    {from: 2, to: 4},
+    {from: 2, to: 5},
+    {from: 3, to: 5} 
+  ]);
+
+  // create a network
+  var container = document.getElementById('mynetwork');
+  var data = {
+    nodes: nodes,
+    edges: edges
+  };
+  var options = {};
+  var network = new vis.Network(container, data, options);
+</script>
+                            </div></div>
                     </div>
                         <div class="substep"><blockquote>Semantic Web is breaking down the data silos</blockquote>
                             <p class="x-small right">Tim Berners-Lee: <a href="https://www.youtube.com/watch?v=OM6XIICm_qo">The next Web of open, linked data</a></p></div>
@@ -1063,6 +1116,14 @@ op de mouw durft spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.
                 </ul>
             </div>
         </div>
+        <!-- hint for touch displays --> 
+        <!-- <script type="text/javascript">
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+        -->
+        
         <!-- jquery -->
         <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
         <!-- unite gallery -->
@@ -1111,15 +1172,6 @@ op de mouw durft spelden, dat nooit gebeurd is, en meestal niet gebeuren kan.
         obj.init();
         initSlideNo(obj);
     </script>
-        <!--    <script>
-            var videoStep = document.getElementById("video-step");
-var video = document.getElementById("video");
-videoStep.addEventListener("impress:stepenter", function() {
-    video.play();
-}, false);
-videoStep.addEventListener("impress:stepleave", function() {
-    video.pause();
-}, false);
-        </script> -->
+       
     </body>
 </html>

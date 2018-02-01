@@ -20,7 +20,12 @@
 button.mfp-close {
 	pointer-events: auto;
 }
-
+/* VIS */
+ #mynetwork {
+      width: 600px;
+      height: 400px;
+      border: 1px solid lightgray;
+    }
 .swiper-container-horizontal .swiper-slide {
 	padding: 25px 0 10px 0;
 	font-size: 18px;
